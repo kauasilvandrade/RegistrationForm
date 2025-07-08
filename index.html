@@ -3,7 +3,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registration Form</title>
@@ -12,10 +12,135 @@
   <link rel="stylesheet" href="assets/css/index.css"> 
 
   <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
-  
+  <div class="app">
+
+    <aside>
+
+      <img src="assets/images/stars.svg" alt="Estrelas do Amanhã">
+
+      <img src="assets/images/Illustration.png" alt="">
+
+    </aside>
+
+    <main>
+
+      <div>
+
+        <span>
+          <img src="assets/images/arrow-left.png" alt="Arrow Left">
+          Voltar
+        </span>
+
+        <h2>Formulário de matrícula</h2>
+
+        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+      </div>
+
+      <form>
+
+        <fieldset>
+          
+          <legend>Informações da criança</legend>
+
+          <div class="input-wrapper">
+            <label for="name">Nome completo</label>
+            <input type="text" name="name" id="name" autocomplete="name">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="date">Data de nascimento</label>
+            <input type="date" name="date" id="date">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="sex">Sexo</label>
+            <select name="sex" id="sex">
+              <option>Feminino</option>
+              <option>Masculino</option>
+              <option>Prefiro não dizer</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="info">Informações médicas</label>
+            <textarea name="info" id="info"></textarea>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="bith">Certidão de nascimento</label>
+            <input type="file" name="bith" id="bith">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Endereço residencial</legend>
+
+          <div class="input-wrapper">
+            <label for="cep">CEP</label>
+            <input type="number" name="cep" id="cep">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="street">Rua</label>
+            <input type="number" name="street" id="street" disabled>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="number">Número</label>
+            <input type="number" name="number" id="number">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="city">Cidade</label>
+            <input type="number" name="city" id="city" disabled>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="state">Estado</label>
+            <input type="number" name="state" id="state" disabled>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Informações do responsável</legend>
+
+          <div class="input-wrapper">
+            <label for="responsible">Nome do responsável</label>
+            <input type="text" name="responsible" id="responsible" autocomplete="name">
+            <span>Principal responsável legal e contato de emergência</span>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="phone">Telefone</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="mail">E-mail</label>
+            <input type="email" name="mail" id="mail">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Opções de matrícula</legend>
+
+        </fieldset>
+
+      </form>
+
+    </main>
+
+  </div>
 </body>
 </html>

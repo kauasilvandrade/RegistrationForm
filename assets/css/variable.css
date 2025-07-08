@@ -20,10 +20,11 @@
   --semantic-error: #DC2626;
 
   /* FONTS */
-  --ff-sans: "Roboto Condensed", sans-serif;
+  --ff-sans: "Poppins", sans-serif;
   --h1: 700 2rem/120% var(--ff-sans);
   --h2: 700 1.5rem/120% var(--ff-sans);
   --h3: 700 1.25rem/120% var(--ff-sans);
-  --h4: 700 1rem/120% var(--ff-sans);
+  --text: 600 1rem/120% var(--ff-sans);
+  --text-sm: 400 0.875rem/120% var(--ff-sans)
 
 }
