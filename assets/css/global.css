@@ -1,4 +1,12 @@
 @import url(variable.css);
+@import url(fieldset/inputs.css);
+@import url(aside.css);
+@import url(main.css);
+@import url(fieldset/droparea.css);
+@import url(fieldset/address.css);
+@import url(fieldset/gardian.css);
+@import url(fieldset/enrollOptions.css);
+@import url(fieldset/terms-actions.css);
 
 *, *::before, *::after {
   margin: 0;
@@ -9,8 +17,28 @@
 }
 
 body {
-  font: var(--text);
   color: var(--text-secondary);
+  background-color: #fee7d6;
+  font: 400 1rem var(--ff-sans);
+}
+
+h2 {
+  font: var(--h2);
+  color: var(--text-primary);
+}
+
+p {
+  font: 400 1rem var(--ff-sans);
+}
+
+fieldset {
+  border: none;
+  
+  & legend {
+    font: var(--text);
+    color: var(--text-primary);
+    margin-bottom: 1.25rem;
+  }
 }
 
 img {
@@ -32,11 +60,8 @@ button {
   background-color: transparent;
 }
 
-label {
-  font: var(--text-sm);
-}
-
 .app {
   width: 23.43rem;
   margin-inline: auto;
 }
+

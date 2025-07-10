@@ -28,12 +28,12 @@
 
     <main>
 
-        <div>
+        <div class="arrow">
           <img src="assets/images/arrow-left.png" alt="Arrow Left">
           <span>Voltar</span>
         </div>
 
-        <h1>Formulário de matrícula</h1>
+        <h2>Formulário de matrícula</h2>
 
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
@@ -95,7 +95,7 @@
 
           <div class="input-wrapper">
             <label for="street">Rua</label>
-            <input type="number" name="street" id="street" value="Rua das flores" disabled>
+            <input type="number" name="street" id="street" value="Rua das Flores" disabled placeholder="Rua das Flores">
           </div>
 
           <div class="input-wrapper">
@@ -105,12 +105,12 @@
 
           <div class="input-wrapper">
             <label for="city">Cidade</label>
-            <input type="number" name="city" id="city" value="São Paulo" disabled>
+            <input type="number" name="city" id="city" value="São Paulo" placeholder="São Paulo" disabled>
           </div>
 
           <div class="input-wrapper">
             <label for="state">Estado</label>
-            <input type="number" name="state" id="state" value="SP" disabled>
+            <input type="number" name="state" id="state" value="SP" disabled placeholder="SP">
           </div>
 
         </fieldset>
@@ -133,10 +133,10 @@
           <div class="input-wrapper">
             <label for="mail">E-mail</label>
             <input type="email" name="mail" id="mail" required>
-            <div class="error">
+            <!-- <div class="error">
               <img src="assets/images/circle-alert.svg" alt="Ícone de alerta vermelho">
               <span>Insira um e-mail válido</span>
-            </div>
+            </div> -->
           </div>
 
         </fieldset>
@@ -152,15 +152,15 @@
             <div class="radio-wrapper">
 
               <div class="radio-inner">
-                <div class="radio-image"></div>
                 <input type="radio" name="shift" id="morning">
+                <div class="radio-image"></div>
                 <img src="assets/images/sun-cloud-02.png" alt="">
                 <label for="morning">Manhã</label>
               </div>
 
               <div class="radio-inner">
-                <div class="radio-image"></div>
                 <input type="radio" name="shift" id="afternoon">
+                <div class="radio-image"></div>
                 <img src="assets/images/sun-1.svg" alt="">
                 <label for="afternoon">Tarde</label>
               </div>
@@ -168,7 +168,6 @@
             </div>
             
           </div>
-
           
           <div class="input-wrapper">
             <label>Em qual esporte você gostaria de inscrever seu filho?</label>
@@ -177,36 +176,42 @@
 
               <div class="radio-inner">
                 <input type="radio" name="sport" id="football">
+                <div class="radio-image"></div>
                 <img src="assets/images/football.svg" alt="">
                 <label for="football">Futebol</label>
               </div>
             
               <div class="radio-inner">
                 <input type="radio" name="sport" id="basketball">
+                <div class="radio-image"></div>
                 <img src="assets/images/basketball.svg" alt="">
                 <label for="basketball">Basquete</label>
               </div>
             
               <div class="radio-inner">
                 <input type="radio" name="sport" id="swimming">
+                <div class="radio-image"></div>
                 <img src="assets/images/swimming.svg" alt="">
                 <label for="swimming">Natação</label>
               </div>
                       
               <div class="radio-inner">
                 <input type="radio" name="sport" id="yoga">
+                <div class="radio-image"></div>
                 <img src="assets/images/yoga-02.svg" alt="">
                 <label for="yoga">Yoga</label>
               </div>
             
               <div class="radio-inner">
                 <input type="radio" name="sport" id="volley">
+                <div class="radio-image"></div>
                 <img src="assets/images/volleyball.svg" alt="">
                 <label for="volley">Volley</label>
               </div>
           
               <div class="radio-inner">
                 <input type="radio" name="sport" id="boxing">
+                <div class="radio-image"></div>
                 <img src="assets/images/boxing.svg" alt="">
                 <label for="boxing">Boxe</label>
               </div>

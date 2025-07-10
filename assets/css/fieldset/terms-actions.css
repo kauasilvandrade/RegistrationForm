@@ -1,0 +1,80 @@
+.terms-wrapper {
+  display: flex;
+  position: relative;
+
+  input {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input:checked ~ label::before {
+    
+    background: url(../../images/checkmark-square.png) center;
+  }
+
+  input:hover ~ label::before, input:focus ~ label::before {
+      border: 2px solid var(--stroke-highlight);
+  }
+
+  label {
+    padding-left: 2.5rem;
+    margin-block: 2rem; 
+
+    strong {
+      color: var(--text-highlight);
+      font-weight: 500;
+    }
+
+    &::before {
+      content: '';
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 2.1rem;
+      left: .5rem;
+      border-radius: 7px;
+      border: 2px solid var(--stroke-default);
+    }
+
+  }
+}
+
+.actions-wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  button {
+    all: unset;
+    font-weight: 500;
+    color: var(--text-highlight);
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: .5s;
+  }
+
+  button[type="button"] {
+    border: 1px solid var(--stroke-highlight);
+  }
+  button[type="button"]:hover {
+    background-color: var(--stroke-highlight);
+    color: white;
+  }
+
+  button[type="submit"] {
+    background-color: var(--stroke-highlight);
+    color: white;
+  }
+  button[type="submit"]:hover {
+    border: 1px solid var(--stroke-highlight);
+    background-color: transparent;
+    color: var(--text-highlight);
+  }
+
+}

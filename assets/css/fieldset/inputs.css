@@ -1,0 +1,67 @@
+input, textarea, select {
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--stroke-default);
+  cursor: pointer;
+  border: 1px solid transparent;
+
+  padding: .75rem 1rem;
+
+  font: 400 1rem/120% var(--ff-sans);
+  margin-bottom: 1.25rem;
+} 
+
+input::placeholder, textarea::placeholder, select, input[type="date"] {
+  color: var(--text-tertiary);
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+input:focus, textarea:focus, select:focus, input[type="date"]:focus-within {
+  outline: 0.25rem solid var(--surface-secondary);
+  border-color: var(--stroke-highlight);
+  outline-offset: .1px;
+}
+
+input:hover, textarea:hover, select:hover, input[type="date"]:hover {
+  border: 1px solid var(--stroke-highlight);
+}
+
+label {
+  font: var(--text-sm);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+textarea {
+  height: 7.5rem;
+  resize: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator { 
+  display: none;
+}
+
+input[type="date"] {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input[type="date"]::after {
+  content: '';
+  background-image: url(../images/calendar.png);
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  right: 1rem;
+  position: absolute;
+}
+
+select {
+  position: relative;
+  background: url(../images/arrow-down.png) no-repeat calc(100% - 1rem);
+}

@@ -1,0 +1,57 @@
+.enroll-options {
+  .radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    & .radio-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border-radius: .5rem;
+      border: 2px solid transparent;
+      outline: 1px solid var(--stroke-default);
+      padding: .75rem 1rem;
+      font: 400 1rem / 120% var(--ff-sans);
+
+      &:hover {
+        border: 2px solid var(--stroke-highlight);
+      }
+
+      &:hover .radio-image {
+        border: 2px solid var(--stroke-highlight);
+      }
+
+      & .radio-image {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: .5rem;
+        left: .5rem;
+        border-radius: 50%;
+        border: 2px solid var(--stroke-default);
+      }
+
+      & input[type="radio"]:focus + .radio-image, & input[type="radio"]:checked + .radio-image {
+        background: white url(../../images/radio-checked.svg) no-repeat center;
+      }
+
+      & input {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+      }
+  
+    }
+  }
+}
